@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+	<script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+	<!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+	<script src="https://unpkg.com/intersection-observer/intersection-observer.js"></script>
+
+	<!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+	<script src="https://unpkg.com/resize-observer-polyfill/dist/ResizeObserver.js"></script>
+
+	<!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+	<script src="https://unpkg.com/focus-visible/dist/focus-visible.min.js" defer></script>
+
+	<!-- 🚨 REQUIRED: The model-viewer component -->
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	
+	<!-- Assigns model based on URL parameters -->
+	<script src="scripts/assign-model.js"></script>
+	
+	<!-- On iOS, opens the iOS AR Quick Look App immediatelly -->
+	<script src="scripts/ios-redirect.js"></script>
+	
+	<link rel="stylesheet" href="model.css">
+</head>
+<body>
+	<model-viewer loading="eager"
+		      ar
+		      autoplay
+		      auto-rotate
+		      camera-controls></model-viewer>
+</body>
+</html>

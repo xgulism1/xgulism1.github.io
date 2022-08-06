@@ -1,0 +1,13 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+}
+
+model-viewer {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	--poster-color: transparent;
+	--ar-button-scale: 2;
+}
