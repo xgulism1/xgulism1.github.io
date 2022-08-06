@@ -411,6 +411,11 @@ a.hoverline:hover {
   display: table-cell;
 }
 
+.card .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #experience .card-content .row {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
