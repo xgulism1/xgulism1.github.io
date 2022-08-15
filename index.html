@@ -498,7 +498,7 @@
                 <span class="card-title teal-text"><i class="mdi-navigation-close right"></i></span>
                 <ul>
                   <li>This is an editor application for Microsoft Windows, iOS and Android platforms.</li>
-                  <li>It was developed in Unreal Engine primarily for virtual and augmented reality, but perspective and orthographic modes are also supported</li>
+                  <li>It was developed in Unreal Engine primarily for virtual and augmented reality, but perspective and orthographic modes are also supported.</li>
                   <li>The main purpose is object layouting, creating workflows and displaying data from embedded systems.</li>
                   <li>A client-server model is used. Users create scenes that are sent to the server.</li>
                   <li>The created scenes are synchronized across all of the devices in real-time using simple polling.</li>
@@ -506,11 +506,37 @@
                   <li>The primary scene object types are texts and models.</li>
                   <li>Texts can be static or change dynamically.</li>
                   <li>Models are downloaded from the server and loaded at runtime.</li>
-                  <li>Users can upload CAD models using web client. These models are triangulated for use in the application.</li>
                   <li>PBR materials including textures are supported.</li>
                   <li><b>Tools:</b> Unreal Engine 4, C++, Blueprints, Objective-C, C#, SQLite, REST API</li>
                 </ul>
                 <!--TODO - add video -->
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light activator">
+                <img alt="Mesh Decimator screenshot" src="/assets/img/Tri-brezel.png" class="activator img-full" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">
+                  Mesh Decimator - Tool
+                </span>
+                <p>
+                  A tool made using OpenCascade and Assimp in C++
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title teal-text"><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>This is a tool for importing CAD model files and exporting triangulated model files.</li>
+                  <li>The CAD file is imported and triangulated using OpenCascade.</li>
+                  <li>The data is transformed into Assimp structures for simplification, post-processing and export to a new file.</li>
+                  <li>The tool was originally compiled as a command line application.</li>
+                  <li>Later I created a C# wrapper for calling functions using P/Invoke and a C++/CLI wrapper for calling functions from C#. I tried both methods to learn them.</li>
+                  <li>Finally, I created a nuget for easy integration of the tool into the system.</li>
+                  <li><b>Tools:</b> C++, C++/CLI, C#, .NET, P/Invoke</li>
+                </ul>
               </div>
             </div>
           </div>
