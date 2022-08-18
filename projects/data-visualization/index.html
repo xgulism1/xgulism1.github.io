@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Data visualization</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/structured-filter.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+    </head>
+
+    <body>
+        <!--General UI-->
+        <div id="ui">
+            <div id="filterDiv">
+                <div class="content">
+                    <div id="filter"></div>
+                </div>
+            </div>
+            <div id="infoDiv">
+                <div class="content">
+                    <h2>Household power consumption</h2>
+                    <div id="infoCountDiv">
+                        <div id="infoCountText">
+                            <h3>Number of selected objects/records:</h3>
+                        </div>
+                        <div id="infoCountNum">
+                            <h3></h3>
+                        </div>
+                        <a id="showDetailsIcon" class="fa fa-info-circle" aria-hidden="true"></a>
+                    </div>
+                    <div id="infoTable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Average value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <a id="toggleInfo" class="ui-button ui-corner-all ui-widget" role="button">Close info</a>
+            </div>
+            <div id="datGuiDiv">
+                <div id="datGui"></div>
+            </div>
+            <div id="selectionBox"></div>
+        </div>
+
+        <!--Canvas for visualisation-->
+        <canvas id="canvas"></canvas>
+
+        <!-- popup window -->
+        <div id="detailsPopup">
+            <span id="hideDetailsIcon" class="close">&times;</span>
+            <div class="content">
+                <h2>Household power consumption</h2>
+                <div id="detailsTable">
+                    <table>
+                        <thead>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+            </div>
+            </div>
+        </div>
+
+        <script src="https://use.fontawesome.com/c4c4631a69.js"></script>
+        <script src='./js/libs/three.min.js'></script>
+        <script src="./js/libs/jquery-3.3.1.min.js"></script>
+        <script src="./js/libs/jquery-ui.min.js"></script>
+        <script src="./js/libs/dat.gui.min.js"></script>
+
+        <script src="js/sceneSubjects/AxisLine.js"></script>
+        <script src="js/sceneSubjects/AxisScaleNumbers.js"></script>
+        <script src="js/sceneSubjects/AxisScalePoints.js"></script>
+        <script src="js/sceneSubjects/GeneralLights.js"></script>
+        <script src="js/sceneSubjects/TerrainObject.js"></script>
+        <script src="js/sceneSubjects/TerrainPlane.js"></script>
+
+        <script src="js/DataManager.js"></script>
+        <script src="js/DataObject.js"></script>
+        <script src="js/Mouse.js"></script>
+        <script src="js/OrbitControls.js"></script>
+        <script src="js/SceneManager.js"></script>
+        <script src="js/StructuredFilter.js"></script>
+        <script src="js/TextFormatter.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

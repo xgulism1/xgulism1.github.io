@@ -1,0 +1,164 @@
+html, body {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    margin: 0;
+}
+
+.fa,
+.close {
+    cursor: pointer; /* Change mouse cursor */
+}
+
+#ui {
+    pointer-events: none; /* Cannot be targeted by on click events */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    overflow: auto;
+}
+
+#filterDiv {
+    pointer-events: auto; /* Can be targeted by on click events */
+    position: relative; /* Position first above all else */
+    margin: 1em 1em 1px;
+    padding: 5px;
+    border-radius: 5px; /* Make round corners */
+    background: rgba(255, 255, 255, 0.9); /* Make semitransparent */
+}
+
+#infoDiv {
+    pointer-events: auto; /* Can be targeted by on click events */
+    display: none; /* Details hidden on default to not be disruptive */
+    position: absolute; /* Position below filter */
+    max-width: 40%;
+    margin: 1em 1em 1px;
+    overflow: auto; /* Enable scroll if needed */
+    border-radius: 5px; /* Make round corners */
+    background: rgba(255, 255, 255, 0.9); /* Make semitransparent */
+}
+
+#infoDiv .content {
+    margin: 10px;
+}
+
+#toggleInfo {
+    display: block;
+    margin: auto;
+}
+
+#infoCountDiv {
+    display: flex;
+    align-items: center;
+}
+
+#infoCountText {
+    display: inline-block;
+    width: 60%;
+}
+
+#infoCountNum {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+#showDetailsIcon {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+}
+
+#infoTable {
+    overflow: auto; /* Enable scroll if needed */
+}
+
+#infoTable table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#infoTable td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#infoTable thead tr {
+    background-color: #aaaaaa;
+}
+
+#infoTable tbody tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#detailsPopup {
+    pointer-events: auto; /* Can be targeted by on click events */
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    width: 90%;
+    height: 80%;
+    left: 0;
+    top: 0;
+    margin: 5%;
+    overflow: auto; /* Enable scroll if needed */
+    border-radius: 5px; /* Make round corners */
+    border: 5px solid black;
+    background-color: #fefefe;
+}
+
+#detailsPopup .content {
+    margin: 10px;
+}
+
+#hideDetailsIcon {
+    position: absolute; /* Position top right */
+    float: right;
+    width: 5%;
+    right: 0; /* Position to the right */
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
+
+#detailsTable {
+    overflow: auto; /* Enable scroll if needed */
+}
+
+#detailsTable table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#detailsTable td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#detailsTable thead tr {
+    background-color: #aaaaaa;
+}
+
+#detailsTable tbody tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#datGuiDiv {
+    pointer-events: auto; /* Can be targeted by on click events */
+    position: absolute; /* Position below filter */
+    margin: 1em 1em 1px;
+    right: 0; /* Position to the right */
+    height: 0;
+}
+
+#selectionBox {
+    pointer-events: auto; /* Can be targeted by on click events */
+    position: absolute;
+    display: none;
+}
