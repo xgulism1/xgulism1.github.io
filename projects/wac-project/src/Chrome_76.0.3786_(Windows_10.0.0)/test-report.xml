@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 76.0.3786 (Windows 10.0.0)" package="" timestamp="2019-05-15T19:35:35" id="0" hostname="LAPTOP-QBF0CBLF" tests="33" errors="0" failures="0" time="8.071">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3786.0 Safari/537.36"/>
+  </properties>
+  <testcase name="AmbulancePrescriptionListService should be created" time="0.069" classname="Chrome_76_0_3786_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AmbulancePrescriptionListService should get to retrieving API for prescriptions" time="0.142" classname="Chrome_76_0_3786_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AmbulancePrescriptionListService should get to retrieving API for overlaps" time="0.01" classname="Chrome_76_0_3786_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AmbulancePrescriptionListService should post to creating API for prescriptions if id is not specified" time="0.016" classname="Chrome_76_0_3786_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AmbulancePrescriptionListService should post to updating API for prescriptions if id is specified" time="0.015" classname="Chrome_76_0_3786_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AmbulancePrescriptionListService should delete to deleting API for prescriptions" time="0.018" classname="Chrome_76_0_3786_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AmbulancePrescriptionListService should get to retrieving API for medicine" time="0.01" classname="Chrome_76_0_3786_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AppComponent should create the app" time="0.384" classname="Chrome_76_0_3786_(Windows_10_0_0).AppComponent"/>
+  <testcase name="AppComponent should have toolbar and icon" time="0.059" classname="Chrome_76_0_3786_(Windows_10_0_0).AppComponent"/>
+  <testcase name="AppEffects should be created" time="0.023" classname="Chrome_76_0_3786_(Windows_10_0_0).AppEffects"/>
+  <testcase name="OverlapEntryComponent should create" time="2.161" classname="Chrome_76_0_3786_(Windows_10_0_0).OverlapEntryComponent"/>
+  <testcase name="OverlapEntryComponent should have mat-expansion-panel and mat-expansion-panel-header" time="0.242" classname="Chrome_76_0_3786_(Windows_10_0_0).OverlapEntryComponent"/>
+  <testcase name="OverlapEntryComponent should have mat-expansion-panel and mat-list" time="0.121" classname="Chrome_76_0_3786_(Windows_10_0_0).OverlapEntryComponent"/>
+  <testcase name="OverlapListComponent should create" time="0.067" classname="Chrome_76_0_3786_(Windows_10_0_0).OverlapListComponent"/>
+  <testcase name="OverlapListComponent should have toolbar" time="0.078" classname="Chrome_76_0_3786_(Windows_10_0_0).OverlapListComponent"/>
+  <testcase name="OverlapListComponent should have accordion" time="0.078" classname="Chrome_76_0_3786_(Windows_10_0_0).OverlapListComponent"/>
+  <testcase name="OverlapListComponent should have &quot;a&quot; with mat-fab containing icon" time="0.147" classname="Chrome_76_0_3786_(Windows_10_0_0).OverlapListComponent"/>
+  <testcase name="PrescriptionEntryEditorComponent should create" time="0.442" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionEntryEditorComponent"/>
+  <testcase name="PrescriptionEntryEditorComponent should floor to day when not rounded" time="0.393" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionEntryEditorComponent"/>
+  <testcase name="PrescriptionEntryEditorComponent should floor to day when after midnight lesser than timezone offset" time="0.406" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionEntryEditorComponent"/>
+  <testcase name="PrescriptionEntryEditorComponent should floor to day when before midnight lesser than timezone offset" time="0.371" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionEntryEditorComponent"/>
+  <testcase name="PrescriptionEntryEditorComponent should floor to day when already rounded" time="0.36" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionEntryEditorComponent"/>
+  <testcase name="PrescriptionEntryEditorComponent should floor to day as string" time="0.39" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionEntryEditorComponent"/>
+  <testcase name="PrescriptionEntryEditorComponent should have mat-card and mat-card-header" time="0.353" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionEntryEditorComponent"/>
+  <testcase name="PrescriptionEntryComponent should create" time="1.027" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionEntryComponent"/>
+  <testcase name="PrescriptionEntryComponent should have mat-expansion-panel and mat-expansion-panel-header" time="0.268" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionEntryComponent"/>
+  <testcase name="PrescriptionListComponent should create" time="0.059" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionListComponent"/>
+  <testcase name="PrescriptionListComponent should have toolbar" time="0.061" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionListComponent"/>
+  <testcase name="PrescriptionListComponent should have accordion" time="0.052" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionListComponent"/>
+  <testcase name="PrescriptionListComponent should have two &quot;a&quot;" time="0.084" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionListComponent"/>
+  <testcase name="PrescriptionListComponent should have first &quot;a&quot; with mat-fab containing icon" time="0.099" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionListComponent"/>
+  <testcase name="PrescriptionListComponent should have second &quot;a&quot; with mat-fab containing icon" time="0.065" classname="Chrome_76_0_3786_(Windows_10_0_0).PrescriptionListComponent"/>
+  <testcase name="Prescription Reducer unknown action should return the initial state" time="0.001" classname="Chrome_76_0_3786_(Windows_10_0_0).Prescription Reducer"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

@@ -1,0 +1,10 @@
+mat-toolbar mat-accordion {
+    display: block;
+    margin: auto;
+}
+
+.back {
+    position: absolute;
+    left: 48px;
+    bottom: 32px;
+}

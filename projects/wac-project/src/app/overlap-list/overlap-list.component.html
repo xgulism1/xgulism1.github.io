@@ -1,0 +1,15 @@
+<mat-toolbar color="accent">
+  <span>Time overlaps in prescriptions</span>
+</mat-toolbar>
+<mat-accordion [multi]="true">
+  <ng-container *ngFor="let entry of (overlapList$ | async)">
+    <app-overlap-entry [data]="entry"></app-overlap-entry>
+  </ng-container>
+</mat-accordion>
+
+<a mat-fab
+   matTooltip="Back"
+   [routerLink]="['/prescription-list']"
+   class="back">
+  <mat-icon>arrow_back</mat-icon>
+</a>

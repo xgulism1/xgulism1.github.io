@@ -1,0 +1,21 @@
+<mat-toolbar color="accent">
+  <span>Prescriptions</span>
+</mat-toolbar>
+<mat-accordion [multi]="true">
+  <ng-container *ngFor="let entry of (prescriptionList | async)">
+    <app-prescription-entry [data]="entry" (deleteEmitter)="onDelete($event)"></app-prescription-entry>
+  </ng-container>
+</mat-accordion>
+
+<a mat-fab
+   matTooltip="New prescription"
+   [routerLink]="['/prescription-list', 'new']" class="add-new">
+  <mat-icon>add</mat-icon>
+</a>
+
+<a mat-fab
+   matTooltip="Time overlaps in prescriptions"
+   [routerLink]="['/overlap-list']"
+   class="overlap">
+  <mat-icon>access_time</mat-icon>
+</a>

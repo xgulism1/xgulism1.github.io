@@ -1,0 +1,51 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <mat-icon>local_hospital</mat-icon>
+      <span class="center-text" *ngIf="data.medicine"> {{ data.medicine.name }} </span>
+    </mat-panel-title>
+    <mat-panel-description class="center-text">
+      {{ data.since | date: 'shortDate' }} - {{ data.until | date: 'shortDate' }}
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <mat-form-field class="row" *ngIf="data.medicine">
+    <input matInput
+           placeholder="Medicine code"
+           [value]="data.medicine.code"
+           readonly />
+  </mat-form-field>
+  <span class="row">
+    <mat-form-field>
+      <input matInput
+             placeholder="First day of use (including this day)"
+             [value]="data.since | date: 'shortDate'" 
+             readonly />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput
+             placeholder="Last day of use (including this day)"
+             [value]="data.until | date: 'shortDate'" 
+             readonly />
+    </mat-form-field>
+  </span>
+  <span class="row">
+    <mat-form-field>
+      <input matInput
+             type="number"
+             placeholder="Number of doses per day"
+             [value]="data.takeTimesPerDay"
+             readonly />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput
+             type="number"
+             placeholder="Quantity per dose{{ data.medicine ? ' (' + data.medicine.dosageForm + ')' : ''}}"
+             [value]="data.takeAmount"
+             readonly />
+    </mat-form-field>
+  </span>
+  <mat-action-row>
+    <button mat-button [routerLink]="['/prescription-list', data.id]">Edit</button>
+    <button mat-button (click)="deleteEmitter.next(data)">Delete</button>
+  </mat-action-row>
+</mat-expansion-panel>

@@ -1,0 +1,29 @@
+mat-form-field {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.row {
+    display: block;
+}
+
+.column {
+    display: inline-block;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.slider-label {
+    display: block;
+    margin-right: 1em;
+    margin-left: 1em;
+    font-size: 80%;
+}
+
+.mat-slider {
+    width: 80%;
+}
+
+.error {
+    color: red;
+}

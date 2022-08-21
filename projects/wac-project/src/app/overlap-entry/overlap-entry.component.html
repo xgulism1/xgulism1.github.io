@@ -1,0 +1,17 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <mat-icon>access_time</mat-icon>
+      <span class="center-text">{{ data.since | date: 'shortDate' }} - {{ data.until | date: 'shortDate' }}</span>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-list>
+    <ng-container *ngFor="let entry of data.prescriptionList">
+      <mat-list-item *ngIf="entry.medicine">
+        <mat-icon>local_hospital</mat-icon>
+        <span class="center-text">{{ entry.medicine.code }}</span>
+        <span class="right-text">{{ entry.since | date: 'shortDate' }} - {{ entry.until | date: 'shortDate' }}</span>
+      </mat-list-item>
+    </ng-container>
+  </mat-list>
+</mat-expansion-panel>

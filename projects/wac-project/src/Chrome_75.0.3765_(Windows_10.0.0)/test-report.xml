@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 75.0.3765 (Windows 10.0.0)" package="" timestamp="2019-05-13T22:53:14" id="0" hostname="LAPTOP-QBF0CBLF" tests="30" errors="0" failures="0" time="3.268">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3765.0 Safari/537.36"/>
+  </properties>
+  <testcase name="AmbulancePrescriptionListService should be created" time="0.022" classname="Chrome_75_0_3765_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AmbulancePrescriptionListService should get to retrieving API for prescriptions" time="0.023" classname="Chrome_75_0_3765_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AmbulancePrescriptionListService should get to retrieving API for overlaps" time="0.016" classname="Chrome_75_0_3765_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AmbulancePrescriptionListService should post to creating API for prescriptions if id is not specified" time="0.016" classname="Chrome_75_0_3765_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AmbulancePrescriptionListService should post to updating API for prescriptions if id is specified" time="0.01" classname="Chrome_75_0_3765_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AmbulancePrescriptionListService should delete to deleting API for prescriptions" time="0.013" classname="Chrome_75_0_3765_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AmbulancePrescriptionListService should get to retrieving API for medicine" time="0.01" classname="Chrome_75_0_3765_(Windows_10_0_0).AmbulancePrescriptionListService"/>
+  <testcase name="AppComponent should create the app" time="0.065" classname="Chrome_75_0_3765_(Windows_10_0_0).AppComponent"/>
+  <testcase name="AppComponent should have toolbar and icon" time="0.041" classname="Chrome_75_0_3765_(Windows_10_0_0).AppComponent"/>
+  <testcase name="AppEffects should be created" time="0.016" classname="Chrome_75_0_3765_(Windows_10_0_0).AppEffects"/>
+  <testcase name="OverlapEntryComponent should create" time="0.153" classname="Chrome_75_0_3765_(Windows_10_0_0).OverlapEntryComponent"/>
+  <testcase name="OverlapEntryComponent should have mat-expansion-panel and mat-expansion-panel-header" time="0.134" classname="Chrome_75_0_3765_(Windows_10_0_0).OverlapEntryComponent"/>
+  <testcase name="OverlapEntryComponent should have mat-expansion-panel and mat-list" time="0.125" classname="Chrome_75_0_3765_(Windows_10_0_0).OverlapEntryComponent"/>
+  <testcase name="OverlapListComponent should create" time="0.066" classname="Chrome_75_0_3765_(Windows_10_0_0).OverlapListComponent"/>
+  <testcase name="OverlapListComponent should have toolbar" time="0.067" classname="Chrome_75_0_3765_(Windows_10_0_0).OverlapListComponent"/>
+  <testcase name="OverlapListComponent should have accordion" time="0.071" classname="Chrome_75_0_3765_(Windows_10_0_0).OverlapListComponent"/>
+  <testcase name="OverlapListComponent should have &quot;a&quot; with mat-fab containing icon" time="0.078" classname="Chrome_75_0_3765_(Windows_10_0_0).OverlapListComponent"/>
+  <testcase name="PrescriptionEntryEditorComponent should create" time="0.391" classname="Chrome_75_0_3765_(Windows_10_0_0).PrescriptionEntryEditorComponent"/>
+  <testcase name="PrescriptionEntryEditorComponent should floor to day when not rounded" time="0.385" classname="Chrome_75_0_3765_(Windows_10_0_0).PrescriptionEntryEditorComponent"/>
+  <testcase name="PrescriptionEntryEditorComponent should floor to day (do nothing) when already rounded" time="0.334" classname="Chrome_75_0_3765_(Windows_10_0_0).PrescriptionEntryEditorComponent"/>
+  <testcase name="PrescriptionEntryEditorComponent should have mat-card and mat-card-header" time="0.365" classname="Chrome_75_0_3765_(Windows_10_0_0).PrescriptionEntryEditorComponent"/>
+  <testcase name="PrescriptionEntryComponent should create" time="0.266" classname="Chrome_75_0_3765_(Windows_10_0_0).PrescriptionEntryComponent"/>
+  <testcase name="PrescriptionEntryComponent should have mat-expansion-panel and mat-expansion-panel-header" time="0.225" classname="Chrome_75_0_3765_(Windows_10_0_0).PrescriptionEntryComponent"/>
+  <testcase name="PrescriptionListComponent should create" time="0.064" classname="Chrome_75_0_3765_(Windows_10_0_0).PrescriptionListComponent"/>
+  <testcase name="PrescriptionListComponent should have toolbar" time="0.062" classname="Chrome_75_0_3765_(Windows_10_0_0).PrescriptionListComponent"/>
+  <testcase name="PrescriptionListComponent should have accordion" time="0.059" classname="Chrome_75_0_3765_(Windows_10_0_0).PrescriptionListComponent"/>
+  <testcase name="PrescriptionListComponent should have two &quot;a&quot;" time="0.064" classname="Chrome_75_0_3765_(Windows_10_0_0).PrescriptionListComponent"/>
+  <testcase name="PrescriptionListComponent should have first &quot;a&quot; with mat-fab containing icon" time="0.063" classname="Chrome_75_0_3765_(Windows_10_0_0).PrescriptionListComponent"/>
+  <testcase name="PrescriptionListComponent should have second &quot;a&quot; with mat-fab containing icon" time="0.058" classname="Chrome_75_0_3765_(Windows_10_0_0).PrescriptionListComponent"/>
+  <testcase name="Prescription Reducer unknown action should return the initial state" time="0.006" classname="Chrome_75_0_3765_(Windows_10_0_0).Prescription Reducer"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

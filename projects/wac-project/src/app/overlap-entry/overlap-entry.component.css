@@ -1,0 +1,22 @@
+mat-expansion-panel-header mat-icon {
+    margin-right: 1rem;
+}
+
+mat-list-item mat-icon {
+    margin-right: 1rem;
+}
+
+mat-list-item {
+    display: flex;
+}
+
+.center-text {
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+
+.right-text {
+    float: right;
+    display: flex;
+}

@@ -1,0 +1,30 @@
+mat-expansion-panel-header mat-icon {
+    margin-right: 1rem;
+}
+
+.center-text {
+    align-items: center;
+    display: flex;
+}
+
+mat-form-field {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.row {
+    display: block;
+}
+
+.slider-label {
+    display: block;
+    margin-right: 1em;
+    margin-left: 1em;
+    font-size: 80%;
+}
+
+.column {
+    display: inline-block;
+    margin-right: 1em;
+    margin-left: 1em;
+}

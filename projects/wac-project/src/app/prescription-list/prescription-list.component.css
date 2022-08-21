@@ -1,0 +1,16 @@
+mat-toolbar mat-accordion {
+    display: block;
+    margin: auto;
+}
+
+.add-new {
+    position: absolute;
+    right: 48px;
+    bottom: 32px;
+}
+
+.overlap {
+    position: absolute;
+    left: 48px;
+    bottom: 32px;
+}
