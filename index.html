@@ -304,13 +304,23 @@
               <div class="card-reveal">
                 <span class="card-title grey-text"><i class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li>This plugin solves an electronic circuit defined by a netlist - a list of the electronic components and nodes they are connected to.</li>
-                  <li>The analysis vectors are displayed on an interactive graph.</li>
+                  <li>This plugin solves electronic circuits and displays the results on an interactive graph.</li>
                   <li>The plugin utilizes <a href="https://ngspice.sourceforge.io/" target="_blank" class="teal-text hoverline">ngspice</a> - the spice simulator for electric and electronic circuits.</li>
+                  <li>Features:
+                    <ul>
+                      <li>Define electronic circuits by netlists. A netlist consists of a list of electronic components and the nodes they are connected to.</li>
+                      <li>Start the anaysis in a background thread.</li>
+                      <li>Pause and resume the analysis.</li>
+                      <li>Alter device and model parameters of the circuit while the analysis is paused.</li>
+                      <li>Modify and simplify data for displaying on graphs.</li>
+                      <li>Visualize data on an interactive graph. Drag, zoom and hover over the graph to display the specific value.</li>
+                      <li>If there are more than one circuit, they are scheduled to start one by one, because Ngspice can solve only one at a time.</li>
+                    </ul>
+                  </li>
                   <li><b>Tools:</b> Unreal Engine, C++, Blueprints</li>
                 </ul>
                 <div class="card-action">
-                  <a aria-label="View Demo video" href="https://youtu.be/dlcTaUPAE0g" target="_blank"
+                  <a aria-label="View Demo video" href="https://youtu.be/XACr_H5ea24" target="_blank"
                     data-position="top" data-tooltip="View Demo video"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
                     <i class="fa fa-youtube"></i>
