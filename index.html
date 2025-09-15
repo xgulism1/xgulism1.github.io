@@ -243,7 +243,7 @@
               Software Developer
             </div>
             <ul>
-              <li>Designed, developed, and deployed interactive VR/AR applications for Windows, Android and iOS using Unreal Engine, Unity and XCode (C++, C#, Objective-C, Swift).</li>
+              <li>Designed, developed, and deployed interactive VR/AR applications for Windows, Android and iOS using Unreal Engine, Unity and Xcode (C++, C#, Objective-C, Swift).</li>
               <li>Designed and developed RESTful API with WCF Service (C#), integrating SQLite database and OPC server for data communication.</li>
               <li>Implemented console applications and scripts for Linux and Windows to convert 3D models between multiple formats using OpenCascade and Assimp libraries (C++, C#, Python).</li>
               <li>Created web applications to visualize 3D models in web browsers and AR (JavaScript, HTML).</li>
@@ -342,7 +342,7 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light activator">
-                <img alt="Mesh Decimator screenshot" src="/assets/img/AssetManagement.png" class="activator img-full" />
+                <img alt="Asset Management screenshot" src="/assets/img/AssetManagement.png" class="activator img-full" />
               </div>
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">
@@ -357,11 +357,12 @@
                 <ul>
                   <li>Manage 3D models through a centralized platform.</li>
                   <li>Clients can register and log in to a web application to upload 3D models, manage versions, view models with their hierarchies, and set permissions for viewing or editing.</li>
+                  <li>Users could also trigger a mesh decimation to convert 3D models between multiple formats.</li>
                   <li>The frontend was developed as a web application using Angular and TypeScript.</li>
                   <li>The backend REST API was built using ASP.NET Core and C#.</li>
                   <li>PostgreSQL stored metadata about users, 3D scenes, and 3D models, while Azure Blob Storage stored the content of 3D scenes, 3D models, and thumbnail images.</li>
                   <li>The solution was deployed on the Microsoft Azure cloud platform.</li>
-                  <li><b>Tools:</b> Microsoft Azure, REST API, C#, ASP.NET, PostgreSQL, Angular, TypeScript, JavaScript, HTML</li>
+                  <li><b>Tools:</b> Microsoft Azure, REST API, C#, ASP.NET Core, PostgreSQL, Angular, TypeScript, JavaScript, HTML, Three.js</li>
                 </ul>
               </div>
             </div>
@@ -382,17 +383,18 @@
               <div class="card-reveal">
                 <span class="card-title teal-text"><i class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li>Editor application with real-time collaboration features, available on Windows, macOS, iOS and Android platforms.</li>
-                  <li>Developed in Unreal Engine, primarily for virtual and augmented reality, but also supporting perspective and orthographic modes.</li>
+                  <li>Editor application with real-time collaboration features, available on Windows, macOS, iOS, and Android platforms.</li>
+                  <li>Developed in Unreal Engine, primarily for virtual and augmented reality, while also supporting perspective and orthographic modes.</li>
                   <li>Main purposes include object layout, workflow creation, and displaying data from embedded systems.</li>
-                  <li>Uses a client-server model, where users create scenes that are communicated to the server.</li>
-                  <li>Scenes are synchronized across all devices in real time using polling.</li>
+                  <li>Uses a client-server architecture.</li>
+                  <li>The server exposes a REST API built with WCF Service and C#, and stores data in an SQLite database.</li>
+                  <li>Users create scenes on the client, which are sent to the server and synchronized across all devices in real time using polling</li>
                   <li>The application can also be used offline. All changes are synchronized when the user comes back online.</li>
-                  <li>The primary scene object types are text, models, 3D web browsers, and measure tapes.</li>
-                  <li>Texts can be static or change dynamically.</li>
-                  <li>Models are downloaded from the server and loaded at runtime.</li>
+                  <li>Primary scene object types include text, 3D models, 3D web browsers, and measuring tapes.</li>
+                  <li>Text objects can be static or dynamically updated.</li>
+                  <li>3D models are downloaded from the server and loaded at runtime.</li>
                   <li>PBR materials, including textures, are supported.</li>
-                  <li><b>Tools:</b> Unreal Engine, C++, Blueprints, Objective-C, C#, SQLite, REST API</li>
+                  <li><b>Tools:</b> Unreal Engine, C++, Blueprints, Objective-C, WCF Service, C#, SQLite, REST API</li>
                 </ul>
               </div>
             </div>
@@ -439,7 +441,7 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light activator">
-                <img alt="Sfera AR application screenshot" src="/assets/img/SferaAR_Screenshot.png" class="activator img-full" />
+                <img alt="AR application screenshot" src="/assets/img/AR_Screenshot.png" class="activator img-full" />
               </div>
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">
@@ -476,6 +478,68 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light activator">
+                <img alt="LiDAR application screenshot" src="/assets/img/meshing3-annotated.png" class="activator img-full" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">
+                  LiDAR - Application
+                </span>
+                <p>
+                  Mobile application to scan 3D objects
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title teal-text"><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>Application to scan real-world objects and view them in 3D.</li>
+                  <li>Developed in Xcode for the iOS platform using Swift.</li>
+                  <li>Implemented scanning and scene reconstruction using ARKit and LiDAR technologies.</li>
+                  <li>Additional features include:
+                    <ul>
+                      <li>Pausing scene reconstruction.</li>
+                      <li>Clearing the model to restart scanning.</li>
+                      <li>Toggling between AR view and a solid background.</li>
+                      <li>Switching between solid and wireframe materials for the model.</li>
+                      <li>Switching between grayscale and RGB coloring based on the normal direction for the model.</li>
+                      <li>Adjusting model opacity via a slider to control the overlay of the model on the camera view.</li>
+                      <li>Exporting the model in .obj format.</li>
+                    </ul>
+                  </li>
+                  <li><b>Tools:</b> Xcode, Swift</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light activator">
+                <img alt="Mesh Decimator tool screenshot" src="/assets/img/Tri-brezel.svg" class="activator img-full" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">
+                  Mesh Decimator - Tool
+                </span>
+                <p>
+                  Tool to convert 3D models between formats
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title teal-text"><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>Tool for importing CAD model files and exporting triangulated model files.</li>
+                  <li>CAD files are imported and triangulated using <a href="https://www.opencascade.com/" target="_blank" class="teal-text hoverline">OpenCascade</a>.</li>
+                  <li>The data is converted into <a href="https://github.com/assimp/assimp" target="_blank" class="teal-text hoverline">Assimp</a> structures for simplification, post-processing, and export.</li>
+                  <li>The tool was initially developed as a Python script.</li>
+                  <li>As more control over OpenCascade was required, the tool was reimplemented in C++ and developed into a command-line application for Windows and Linux.</li>
+                  <li>To support C# integration, C++/CLI and P/Invoke technologies were used, which allow distribution as a NuGet package.</li>
+                  <li><b>Tools:</b> C++, C#, Python, .NET, C++/CLI, P/Invoke</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light activator">
                 <img alt="Model-viewer project screenshot" src="/assets/img/Astronaut.png" class="activator img-full" />
               </div>
               <div class="card-content">
@@ -503,33 +567,6 @@
                     <i class="fa fa-external-link"></i>
                   </a>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light activator">
-                <img alt="Mesh Decimator screenshot" src="/assets/img/Tri-brezel.svg" class="activator img-full" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">
-                  Mesh Decimator - Tool
-                </span>
-                <p>
-                  Tool to convert 3D models between formats
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title teal-text"><i class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Tool for importing CAD model files and exporting triangulated model files.</li>
-                  <li>CAD files are imported and triangulated using <a href="https://www.opencascade.com/" target="_blank" class="teal-text hoverline">OpenCascade</a>.</li>
-                  <li>The data is converted into <a href="https://github.com/assimp/assimp" target="_blank" class="teal-text hoverline">Assimp</a> structures for simplification, post-processing, and export.</li>
-                  <li>The tool was initially developed as a Python script.</li>
-                  <li>As more control over OpenCascade was required, the tool was reimplemented in C++ and developed into a command-line application for Windows and Linux.</li>
-                  <li>To support C# integration, C++/CLI and P/Invoke technologies were used, which allow distribution as a NuGet package.</li>
-                  <li><b>Tools:</b> C++, C#, Python, .NET, C++/CLI, P/Invoke</li>
-                </ul>
               </div>
             </div>
           </div>
@@ -572,7 +609,7 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light activator">
-                <img alt="Portal 2D Game screenshot" src="/assets/img/Portal2D_Screenshot.png" class="activator img-full" />
+                <img alt="Portal 2D Shooter Game screenshot" src="/assets/img/Portal2D_Screenshot.png" class="activator img-full" />
               </div>
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">
