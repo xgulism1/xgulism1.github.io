@@ -326,6 +326,17 @@ h3 {
   max-height: 60px;
 }
 
+.header {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.subheader {
+  font-size: 80%;
+  color: #666;
+}
+
 .card-action span {
   font-size: 85%;
   color: #666;
@@ -336,6 +347,7 @@ h3 {
 }
 
 .card ul li {
+  font-size: 14px;
   line-height: 200%;
   list-style-type: disc;
   margin-left: 24px;
@@ -400,10 +412,10 @@ a.hoverline:hover {
   flex-wrap: wrap;
 }
 
-#experience .card-content .row {
+/*#experience .card-content .row {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
-}
+}*/
 
 .card-content .row .col {
   align-content: center;
@@ -466,7 +478,6 @@ a.hoverline:hover {
 
 @media (max-width: 1360px) {
   .card ul li {
-    font-size: 14px;
     line-height: 200%;
     margin-left: 20px;
   }
