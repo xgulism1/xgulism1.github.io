@@ -405,6 +405,10 @@ a.hoverline:hover {
   padding-bottom: 10px;
 }
 
+.card-content .row .col {
+  align-content: center;
+}
+
 .card.medium .card-image {
   height: 200px;
 }
